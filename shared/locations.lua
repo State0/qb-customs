@@ -260,45 +260,51 @@ Vehicle Classes:
      --     }
      -- },
  
-     -- ['Paleto'] = {
-     --     settings = {
-     --         label = 'Billys Motorworks',
-     --         welcomeLabel = "Welcome to Billys Motorworks!",
-     --         enabled = true,
-     --     },
-     --     blip = {
-     --         label = 'Bennys Motorworks',
-     --         coords = vector3(108.3242, 6624.0996, 31.7873),
-     --         sprite = 72,
-     --         scale = 0.65,
-     --         color = 0,
-     --         display = 4,
-     --         enabled = true,
-     --     },
-     --     categories = {
-     --         mods = true,
-     --         turbo = true,
-     --         repair = true,
-     --         respray = true,
-     --         liveries = true,
-     --         wheels = true,
-     --         tint = true,
-     --         plate = true,
-     --         extras = true,
-     --         neons = true,
-     --         xenons = true,
-     --         horn = true,
-     --         cosmetics = true,
-     --     },
-     --     drawtextui = {
-     --         text = "Billys Motorworks"
-     --     },
-     --     restrictions = { deniedClasses = { 18 } },
-     --     zones = {
-     --         { coords = vector3(110.93, 6626.51, 31.79), length = 6.0, width = 4.0, heading = 225.0, minZ = 30.5, maxZ = 34.5 },
-     --         { coords = vector3(105.8, 6621.43, 31.79), length = 6.0, width = 4.0, heading = 225.0, minZ = 30.5, maxZ = 34.5 },
-     --     }
-     -- },
+     ['Paleto'] = {
+         settings = {
+             label = 'Tate Brothers Paintworks',
+             welcomeLabel = "Welcome to Tate Brothers Paintworks!",
+             enabled = true,
+         },
+         blip = {
+             label = 'Tate Brothers Paintworks',
+             coords =  vector3(830.68, -813.0, 26.33),
+             sprite = 72,
+             scale = 0.65,
+             color = 38,
+             display = 4,
+             enabled = true,
+         },
+         categories = {
+             mods = false,
+             turbo = false,
+             repair = true,
+             respray = true,
+             liveries = true,
+             wheels = false,
+             tint = true,
+             plate = false,
+             extras = true,
+             neons = false,
+             xenons = false,
+             horn = false,
+             cosmetics = false,
+         },
+         drawtextui = {
+             text = "Tate Brothers Paintworks"
+         },
+         restrictions = { -- A person must pass ALL the restriction checks. Remove an item below to automatically pass that check.
+             job = "tbclubs", -- Allowed job. Can be an array of strings for multiple jobs. Any for all jobs
+             gang = "any", -- Allowed gang. Can be an array of strings for multiple gangs. Any for all gangs
+             allowedClasses = {}, -- Array of allowed classes. Empty will allow any but denied classes.
+             deniedClasses = {}, -- Array of denied classes.
+         },
+         zones = {
+             { coords = vector3(830.85, -820.04, 26.33), length = 6.0, width = 4.0, heading = 90.77, minZ = 20.5, maxZ = 30.5 },
+             { coords = vector3(830.68, -813.0, 26.33), length = 6.0, width = 4.0, heading = 90.77, minZ = 20.5, maxZ = 30.5 },
+             { coords = vector3(830.91, -805.29, 26.33), length = 6.0, width = 4.0, heading = 90.77, minZ = 20.5, maxZ = 30.5 },
+         }
+     },
  
      ['Tunershop'] = {
          settings = {
@@ -319,10 +325,10 @@ Vehicle Classes:
              mods = true, -- Performance Mods
              repair = true,
              armor = true,
-             respray = true,
-             liveries = true,
+             respray = false,
+             liveries = false,
              wheels = true,
-             tint = true,
+             tint = false,
              plate = true,
              extras = true,
              neons = true,
