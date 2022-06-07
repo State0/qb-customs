@@ -215,50 +215,50 @@ Vehicle Classes:
      --     }
      -- },
  
-     -- ['Hayes'] = {
-     --     settings = {
-     --         label = 'Kart Werkstatt',
-     --         welcomeLabel = "Willkommen auf der Sz Kartbahn!",
-     --         enabled = true,
-     --     },
-     --     blip = {
-     --         label = 'Kartbahn Werkstatt',
-     --         coords = vector3(-1337.18, -2751.71, 13.94),
-     --         sprite = 72,
-     --         scale = 0.65,
-     --         color = 0,
-     --         display = 4,
-     --         enabled = true,
-     --     },
-     --     categories = {
-     --         repair = true,
-     --         turbo = false,
-     --         respray = false,
-     --         liveries = true,
-     --         wheels = false,
-     --         tint = false,
-     --         plate = false,
-     --         extras = false,
-     --         neons = false,
-     --         xenons = false,
-     --         horn = true,
-     --         cosmetics = false,
-     --     },
-     --     drawtextui = {
-     --         text = "SZ-Kartbahn",
-     --         icon = "material-icons",
-     --         materialIcon = 'construction',
-     --     },
-     --      restrictions = { -- A person must pass ALL the restriction checks. Remove an item below to automatically pass that check.
-     --         -- job = "any",--{'police', 'ambulance', 'mechanic', 'taxi', 'farmer', 'salieri', 'realestate', 'bus', 'unemployed' }, -- Allowed job. Can be an array of strings for multiple jobs. Any for all jobs
-     --         -- gang = "any", -- Allowed gang. Can be an array of strings for multiple gangs. Any for all gangs
-     --         allowedClasses = {}, -- Array of allowed classes. Empty will allow any but denied classes.
-     --         deniedClasses = {18}, -- Array of denied classes.
-     --     },
-     --     zones = {
-     --         { coords = vector3(-1337.18, -2751.71, 13.94), length = 6.0, width = 4.0, heading = 62, minZ = 35.0, maxZ = 39.0 },
-     --     }
-     -- },
+     ['Hayes'] = {
+         settings = {
+             label = 'Howling Wolfes Bikes',
+             welcomeLabel = "Willkommen bei Howling Wolfes Bikes!",
+             enabled = true,
+         },
+         blip = {
+             label = 'Howling Wolfes Bikes',
+             coords = vector3(1174.43, 2640.24, 37.76),
+             sprite = 226,
+             scale = 0.65,
+             color = 1,
+             display = 4,
+             enabled = true,
+         },
+         categories = {
+             repair = true,
+             turbo = true,
+             respray = false,
+             liveries = false,
+             wheels = true,
+             tint = false,
+             plate = true,
+             extras = true,
+             neons = true,
+             xenons = true,
+             horn = true,
+             cosmetics = true,
+         },
+         drawtextui = {
+             text = "Howling Wolfes Bikes",
+             icon = "material-icons",
+             materialIcon = 'construction',
+         },
+          restrictions = { -- A person must pass ALL the restriction checks. Remove an item below to automatically pass that check.
+             job = "bikeshop",--{'police', 'ambulance', 'mechanic', 'taxi', 'farmer', 'salieri', 'realestate', 'bus', 'unemployed' }, -- Allowed job. Can be an array of strings for multiple jobs. Any for all jobs
+             gang = "any", -- Allowed gang. Can be an array of strings for multiple gangs. Any for all gangs
+             allowedClasses = {8}, -- Array of allowed classes. Empty will allow any but denied classes.
+             deniedClasses = {18}, -- Array of denied classes.
+         },
+         zones = {
+             { coords = vector3(1174.43, 2640.24, 37.76), length = 6.0, width = 4.0, heading = 359.77, minZ = 20.0, maxZ = 39.0 },
+         }
+     },
  
      ['Paleto'] = {
          settings = {
@@ -346,7 +346,7 @@ Vehicle Classes:
              job = "mechanic", -- Allowed job. Can be an array of strings for multiple jobs. Any for all jobs
              gang = "any", -- Allowed gang. Can be an array of strings for multiple gangs. Any for all gangs
              allowedClasses = {}, -- Array of allowed classes. Empty will allow any but denied classes.
-             deniedClasses = {}, -- Array of denied classes.
+             deniedClasses = {8}, -- Array of denied classes.
          },
          zones = {
              { coords = vector3(144.96, -3030.46, 7.06), length = 6.0, width = 4.0, heading = 0.0, minZ = 6.0, maxZ = 10.0 },
